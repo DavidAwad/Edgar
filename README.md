@@ -33,3 +33,8 @@ Let's do our we
 Press [l] for love song or any key for rap songs
 ```
 
+## Contributors
+Originally written by Vishal Rohra and Anthony Lowhur, and I thank them for this fantastic project. 
+
+
+
