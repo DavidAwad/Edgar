@@ -12,7 +12,6 @@ def num_of_words(words):
 def splitParagraphIntoSentences(paragraph):
     ''' break a paragraph into sentences
         and return a list '''
-    import re
     # to split by multile characters
 
     #   regular expressions are easiest (and fastest)
@@ -55,7 +54,7 @@ while True:
                 '''
         print ''
         print ''
-        
+
         print 'Press [l] for love song or any key for rap-like songs'
         typ = raw_input()
 
