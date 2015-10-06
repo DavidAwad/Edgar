@@ -1,7 +1,7 @@
-import sylco
-import markovlib
-import re
 from string import punctuation
+import markovlib
+import sylco
+import re
 
 def num_of_words(words):
         r = re.compile(r'[{}]'.format(punctuation))
@@ -14,17 +14,11 @@ def splitParagraphIntoSentences(paragraph):
         and return a list '''
     # to split by multile characters
 
-    #   regular expressions are easiest (and fastest)
     sentenceEnders = re.compile('[.!?,]')
     sentenceList = sentenceEnders.split(paragraph)
     return sentenceList
 
 
-#print nsyl('multiplication')
-
-#file_ = open('text/combined.txt')
-#file_ = open('scraped_data/1a.txt')
-#file_ = open('text/lyrics.txt')
 while True:
         print 'Press [l] for love song or [r] for rap-like songs'
         typ = raw_input()
@@ -52,10 +46,8 @@ while True:
                 else:
                         print "          [" + s.strip().capitalize() + "]"
                 '''
-        print ''
-        print ''
-
-        print 'Press [l] for love song or any key for rap-like songs'
+        print '\n'
+        print 'Press [l] for love song or any key for rap songs'
         typ = raw_input()
 
         if typ == 'l':
@@ -63,5 +55,4 @@ while True:
         else:
                 file_ = open('scraped_data/1a.txt')
 
-        print ''
-        print ''
+        print '\n'
