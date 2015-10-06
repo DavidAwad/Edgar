@@ -2,7 +2,6 @@
 def prepros_n_print(text_file, line):
     line.replace("&lt;/lyrics&gt", " ")
     line.replace("&lt;lyrics&gt", " ")
-    no_punct = ""
     for char in line:
         if char not in punctuations:
             line = line + char
@@ -10,8 +9,6 @@ def prepros_n_print(text_file, line):
 
 punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 
-
-i = 0
 
 f = open('text/dump-newest.txt', 'r')
 
@@ -31,4 +28,6 @@ for line in f.readlines():
     elif copy:
         prepros_n_print(text_file, line)
 
+# close resource files and return to disk
+f.close()
 text_file.close()

@@ -3,37 +3,25 @@ import markovlib
 import sylco
 import re
 
-
-def num_of_words(words):
-        r = re.compile(r'[{}]'.format(punctuation))
-        new_words_cont = r.sub(' ', words)
-        wordlen = len(new_words_cont.split())
-        return wordlen
-
-
 def splitParagraphIntoSentences(paragraph):
     '''
     break a paragraph into sentences
     and return a list
     '''
-
     sentenceEnders = re.compile('[.!?,]')
     sentenceList = sentenceEnders.split(paragraph)
     return sentenceList
 
+print 'Press [l] for love song or [r] for rap-like rhymes'
+typ = raw_input()
 
-while True:
-        print 'Press [l] for love song or [r] for rap-like songs'
-        typ = raw_input()
-        if typ == 'l' or typ == 'r':
-                break
-
+# here, the typ variable essentially defines what training data to use.
 if typ == 'l':
         file_ = open('text/combined.txt')
 else:
-        file_ = open('scraped_data/1a.txt')
+        file_ = open('text/1a.txt')
 
-
+# generate poem based on files specified
 while True:
         markov = markovlib.Markov(file_)
         text = markov.generate_markov_text()
@@ -41,8 +29,7 @@ while True:
         sentences = splitParagraphIntoSentences(text)
         for s in sentences:
                 senlen = sylco.sylco(s)
-                # num_words = num_of_words(s)
-                print s.strip().capitalize()
+                print(s.strip().capitalize())
                 '''
                 if(senlen <10):
                         print s.strip().capitalize()
@@ -56,6 +43,6 @@ while True:
         if typ == 'l':
                 file_ = open('text/combined.txt')
         else:
-                file_ = open('scraped_data/1a.txt')
+                file_ = open('text/1a.txt')
 
         print '\n'
