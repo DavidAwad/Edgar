@@ -3,16 +3,19 @@ import markovlib
 import sylco
 import re
 
+
 def num_of_words(words):
         r = re.compile(r'[{}]'.format(punctuation))
-        new_words_cont = r.sub(' ',words)
+        new_words_cont = r.sub(' ', words)
         wordlen = len(new_words_cont.split())
         return wordlen
 
+
 def splitParagraphIntoSentences(paragraph):
-    ''' break a paragraph into sentences
-        and return a list '''
-    # to split by multile characters
+    '''
+    break a paragraph into sentences
+    and return a list
+    '''
 
     sentenceEnders = re.compile('[.!?,]')
     sentenceList = sentenceEnders.split(paragraph)
@@ -22,7 +25,7 @@ def splitParagraphIntoSentences(paragraph):
 while True:
         print 'Press [l] for love song or [r] for rap-like songs'
         typ = raw_input()
-        if typ == 'l' or typ=='r':
+        if typ == 'l' or typ == 'r':
                 break
 
 if typ == 'l':
@@ -38,7 +41,7 @@ while True:
         sentences = splitParagraphIntoSentences(text)
         for s in sentences:
                 senlen = sylco.sylco(s)
-                #num_words = num_of_words(s)
+                # num_words = num_of_words(s)
                 print s.strip().capitalize()
                 '''
                 if(senlen <10):

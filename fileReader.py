@@ -1,17 +1,19 @@
-punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 
 def prepros_n_print(text_file, line):
     line.replace("&lt;/lyrics&gt", " ")
     line.replace("&lt;lyrics&gt", " ")
     no_punct = ""
     for char in line:
-       if char not in punctuations:
-           line = line + char
+        if char not in punctuations:
+            line = line + char
     text_file.write(line)
 
-i=0
+punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 
-f=open('text/dump-newest.txt','r')
+
+i = 0
+
+f = open('text/dump-newest.txt', 'r')
 
 text_file = open("text/lyrics.txt", "w")
 
@@ -22,10 +24,10 @@ for line in f.readlines():
 
     if "&lt;/lyrics&gt;" in line:
         copy = False
-        prepros_n_print(text_file,line)
+        prepros_n_print(text_file, line)
     elif "&lt;lyrics&gt;" in line:
         copy = True
-        prepros_n_print(text_file,line)
+        prepros_n_print(text_file, line)
     elif copy:
         prepros_n_print(text_file, line)
 
