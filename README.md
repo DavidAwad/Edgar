@@ -1,7 +1,7 @@
 # LyricGenerator
-Using markov chains to generate lyrics
+Using markov chains to generate poems and song lyrics
 
-###usage
+### usage
 
 
 ```python
@@ -34,7 +34,6 @@ Press [l] for love song or any key for rap songs
 ```
 
 ## Contributors
-Originally written by Vishal Rohra and Anthony Lowhur, and I thank them for this fantastic project. 
+Originally written by Vishal Rohra and Anthony Lowhur, and I thank them for this fantastic project and have really enjoyed having the chance to work on it.
 
-
-
+[Markov Resource](http://agiliq.com/blog/2009/06/generating-pseudo-random-text-with-markov-chains-u/)

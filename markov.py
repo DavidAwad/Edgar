@@ -3,6 +3,7 @@ import markovlib
 import sylco
 import re
 
+
 def splitParagraphIntoSentences(paragraph):
     '''
     break a paragraph into sentences
