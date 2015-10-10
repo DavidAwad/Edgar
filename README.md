@@ -1,36 +1,41 @@
-# LyricGenerator
-Using markov chains to generate poems and song lyrics
+# Edgar
+This is a small terminal app that uses Markov Chains to generate poems and song lyrics.
+
+Training Data was scraped off of azlyrics for convenience.
 
 ### usage
-
-
 ```python
-➜  LyricGenerator-fork git:(master) python markov.py
-Press [l] for love song or [r] for rap-like songs
+➜  LyricGenerator git:(master) python markov.py
+
+Press [l] for love songs
+[b] for blues
+[r] for rap-like rhymes
+
 l
-Into view
-We can shine vibrantly
-There is a place for us
-Rising feelings rising wishes
-We're starting here i'm sure
-Rising prayers
-They’re rising you know
-Something' starting
-I want us to understand each other's feelings more i want us to understand each other's feelings more i want to talk with you alone more if you give a nod
-How far will i run
-To the very end that's fine by me there's no limits
-Alright
-After this wonderful stage hi hi
-Moving forward
-Take hold of the future
-What was the most important thing
-What was it
-A small effort will bring forth tomorrow let's strike while loving the moment
-With that sort of energy
-Let's do our we
+still more to go Let’s go
 
-
-Press [l] for love song or any key for rap songs
+ My aim is that beautiful
+ far-off rainbow
+ so It's time to time
+ The trunks sway in the wind
+ We’ll go together
+ Nurture everyone’s tree of dreams are strong
+ Now
+ Cheers for the farewell parade
+ Jump into the distance
+ I wonder if it’ll be fine if we sing
+ Pure feelings of excitement
+ Point to the future
+ What was the most important thing
+ What was the most important thing
+ What was it
+ A small effort will bring forth tomorrow Let's strike while loving the moment
+ With that sort of energy
+ let's do our best so wave goodbye to my dream
+ I’m overflowing with thank you for you… Thank you
+ I’m so happy
+ so happy
+ so beyond That
 ```
 
 ## Contributors
