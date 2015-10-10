@@ -9,12 +9,6 @@ class Markov(object):
         self.word_size = len(self.words)
         self.database()
 
-    def file_to_words(self):
-        self.open_file.seek(0)
-        data = self.open_file.read()
-        words = data.split()
-        return words
-
 	"""
     Generates triples from the given data string. So if our string were
     "What a lovely day", we'd generate (What, a, lovely) and then
