@@ -3,10 +3,9 @@ import random
 
 class Markov(object):
 
-    def __init__(self, open_file):
+    def __init__(self, data):
         self.cache = {}
-        self.open_file = open_file
-        self.words = self.file_to_words()
+        self.words = data
         self.word_size = len(self.words)
         self.database()
 
