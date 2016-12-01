@@ -1,11 +1,12 @@
 # Edgar
-This is a small terminal app that uses Markov Chains to generate poems and song lyrics.
+
+Edgar takes a text corpus and uses Markov Chains to generate new content based on that.
 
 Training Data was scraped off of azlyrics for convenience.
 
 ### usage
 ```python
-➜  LyricGenerator git:(master) python markov.py
+$ python markov.py
 
 Press [l] for love songs
 [b] for blues
@@ -39,6 +40,4 @@ still more to go Let’s go
 ```
 
 ## Contributors
-Originally written by Vishal Rohra and Anthony Lowhur, and I thank them for this fantastic project and have really enjoyed having the chance to work on it.
-
-[Markov Resource](http://agiliq.com/blog/2009/06/generating-pseudo-random-text-with-markov-chains-u/)
+Originally written by Vishal Rohra and Anthony Lowhur.
