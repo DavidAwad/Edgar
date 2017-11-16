@@ -17,7 +17,7 @@ def splitParagraphIntoSentences(paragraph):
 def selection_text():
     # read appropriate training data based on specified file
     print('\nPress [l] for love songs \n[b] for' +
-          ' blues \n[r] for rap-like rhymes')
+          ' blues \n[r] for rap-like rhymes\n[t] for trump speeches')
     c = raw_input()
 
     # here, the c variable essentially defines what training data to use.
@@ -25,6 +25,8 @@ def selection_text():
             file_ = open('text/combined.txt')
     elif c == 'b':
             file_ = open('text/blues_combined')
+    elif c == 't':
+            file_ = open('text/speeches.txt')
     else:
             file_ = open('text/1a.txt')
     return file_.read().split()

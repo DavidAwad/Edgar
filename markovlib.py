@@ -9,7 +9,7 @@ class Markov(object):
         self.word_size = len(self.words)
         self.database()
 
-	"""
+    """
     Generates triples from the given data string. So if our string were
     "What a lovely day", we'd generate (What, a, lovely) and then
     (a, lovely, day).
